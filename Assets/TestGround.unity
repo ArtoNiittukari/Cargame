@@ -19,7 +19,7 @@ RenderSettings:
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: da976b1a4f7ebb949b0f71341e4f1821, type: 2}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -300,6 +300,7 @@ GameObject:
   - 4: {fileID: 268346379}
   - 54: {fileID: 268346378}
   - 64: {fileID: 268346377}
+  - 65: {fileID: 268346380}
   m_Layer: 0
   m_Name: Gate3
   m_TagString: Untagged
@@ -349,6 +350,18 @@ Transform:
   - {fileID: 1699948515}
   - {fileID: 1076709387}
   m_Father: {fileID: 0}
+--- !u!65 &268346380
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 268346376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.3999996, y: 8.61999989, z: 1}
+  m_Center: {x: -8, y: -2.20000005, z: 0}
 --- !u!1 &443934825
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,6 +441,7 @@ GameObject:
   - 4: {fileID: 493398975}
   - 54: {fileID: 493398977}
   - 64: {fileID: 493398976}
+  - 65: {fileID: 493398978}
   m_Layer: 0
   m_Name: Gate4
   m_TagString: Untagged
@@ -477,6 +491,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &493398978
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 493398974}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.3999996, y: 8.61999989, z: 1}
+  m_Center: {x: -8, y: -2.20000005, z: 0}
 --- !u!1 &507895169
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,6 +513,7 @@ GameObject:
   - 4: {fileID: 507895170}
   - 54: {fileID: 507895172}
   - 64: {fileID: 507895171}
+  - 65: {fileID: 507895173}
   m_Layer: 0
   m_Name: Gate2
   m_TagString: Untagged
@@ -536,6 +563,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &507895173
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 507895169}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.3999996, y: 8.61999989, z: 1}
+  m_Center: {x: -8, y: -2.20000005, z: 0}
 --- !u!1 &510756920
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,6 +1114,7 @@ GameObject:
   - 4: {fileID: 1385114158}
   - 54: {fileID: 1385114157}
   - 64: {fileID: 1385114156}
+  - 65: {fileID: 1385114159}
   m_Layer: 0
   m_Name: Gate1
   m_TagString: Untagged
@@ -1124,6 +1164,18 @@ Transform:
   - {fileID: 1683689176}
   - {fileID: 1422028297}
   m_Father: {fileID: 0}
+--- !u!65 &1385114159
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1385114155}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.3999996, y: 8.61999989, z: 1}
+  m_Center: {x: -8, y: -2.20000005, z: 0}
 --- !u!1 &1422028296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,8 +1451,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: .300000012
-  far clip plane: 1000
-  field of view: 60
+  far clip plane: 2000
+  field of view: 85.708519
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1417,8 +1469,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1500997875}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.0840654, y: 1, z: 19.4131603}
+  m_LocalRotation: {x: .261614084, y: 0, z: 0, w: .965172648}
+  m_LocalPosition: {x: 1085.33899, y: 655.020508, z: -66.691452}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
