@@ -2,43 +2,73 @@
 using System.Collections;
 using System;
 
-public class GameManager : MonoBehaviour{
+public class GameManager : MonoBehaviour
+{
+
 	protected static State e_state;
 	
 	private static GameManager instance=null;
 	
 	void Awake()
 	{
-		if (instance == null) {
+		if (instance == null) 
+		{
 			instance = this;
 		} 
 		else
 			Destroy (this);		
 	}
 	
-	
-	public static void SetState(State state){	
+	/// <summary>
+	/// Sets the current state of the GameManager.
+	/// </summary>
+	/// <param name="state">State.</param>
+	public static void SetState(State state)
+	{	
 		e_state = state;
 	}
-	
-	public static void AddState(State state){
+
+	/// <summary>
+	/// Adds the state to the current state of the GameManager.
+	/// </summary>
+	/// <param name="state">State.</param>
+	public static void AddState(State state)
+	{
 		e_state |= state;
 	}
-	
-	public static State GetState(){
+
+	/// <summary>
+	/// Gets the current state.
+	/// </summary>
+	/// <returns>The state.</returns>
+	public static State GetState()
+	{
 		return e_state;
 	}
-	public static void RemoveState(State state){
+
+	/// <summary>
+	/// Removes the given state from the current state.If the state is not contain, nothing happens.
+	/// </summary>
+	/// <param name="state">State.</param>
+	public static void RemoveState(State state)
+	{
 		e_state &= ~state;
 	}
-	public static bool CheckForState(State state){
+
+	/// <summary>
+	/// Checks if the state is contained in the current state.
+	/// </summary>
+	/// <returns><c>true</c>, if the state is contained, <c>false</c> otherwise.</returns>
+	/// <param name="state">State.</param>
+	public static bool CheckForState(State state)
+	{
 		if ((e_state&state)==state) {
 			return true;		
 		}
 		return false;
-	}
-	
+	}	
 }
+
 [Flags]
 public enum State{
 	StartMenu=1,
